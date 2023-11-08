@@ -1,28 +1,47 @@
-
-
-
-
 body{
-   background-color: #aaa3a3;
+   background: url("https://wallbox.ru/resize/2560x1440/wallpapers/main/201434/687ed105006319c.jpg")  no-repeat ;
    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   overflow: hidden;
 }
+body::-webkit-scrollbar {
+   width: 12px;               /* ширина scrollbar */
+ }
+ body::-webkit-scrollbar-track {
+   background: rgba(0, 0, 0, 0.699);        /* цвет дорожки */
+ }
+ body::-webkit-scrollbar-thumb {
+   background-color: rgb(90, 88, 88);    /* цвет плашки */
+   border-radius: 20px;       /* закругления плашки */
+   border: 3px solid rgb(107, 105, 105);  /* padding вокруг плашки */
+ }
 h1{
    text-align: center;
-   font-size: 25px;
+   font-size: 35px;
    font-weight: bold;
    margin-bottom: 15px;
-}
+   color: rgb(89, 90, 92);
+   /* -webkit-text-stroke: 2px  #0a0a0ab9; контур букв */
+} 
 .container {
-   max-width: 500px;
-   margin: 50px auto;
+   background-color: #d1d1c073;
+   width: 500px;
+   margin: 100px auto;
+   height: 405px;
+   border-radius: 10px;
 }
 .form-control {
    font-size: 18px;
-   background-color: #f8f676;
+   background-color: #7e7e79;
+   opacity: 0.8;
    border-radius: 10px;
    padding: 15px;
-   width: 100%;
+   width: 490px;
    margin: 5px;
+   color: rgb(255, 255, 255);
+}
+::placeholder{
+   color: aliceblue;
+   opacity: 0.6;
 }
 .btn {
   display: flex;
@@ -34,35 +53,25 @@ h1{
    width: 22%;
    border-radius: 10px;
    font-size: 25px;
+   color: white;
 }
-.btn-success{
-   background-color: rgb(52, 211, 38);
-}
-
-.btn-danger{
-   background-color: #df2424;
-}
-.btn-multiplication{
-   background-color: #c0cc1b
-}
-.btn-division{
-    background-color: #a88ab6;
+.btn-success, .btn-danger,.btn-multiplication,.btn-division {
+   background-color: rgba(209, 97, 6, 0.815);
 }
 .btn-success:active{opacity: 0.6;}
 .btn-danger:active{opacity: 0.6;}
 .btn-division:active{opacity: 0.6;}
-.btn-multiplication:active{
-    opacity: 0.6;
-}
+.btn-multiplication:active{opacity: 0.6;}
 
 
 .btn-outline {
-   background-color: rgb(196, 109, 38);
+   background-color: rgb(209, 98, 6, 0.815);
    border-radius: 10px;
    padding: 15px;
-   width: 100%;
+   width: 490px;
    margin: 5px;
    font-size: 17px;
+   color: white;
 }
 .btn-outline:active{
   opacity: 0.6;
@@ -70,16 +79,20 @@ h1{
 }
 .text-rst {
    border-radius: 10px;
-   width: 100%;
+   width: 490px;
    height: 100px;
    margin: 5px;
+   margin-bottom: 5px;
    padding: 20px;
    text-align: center;
-   background-color: #d8bcbc;
+   background-color: #7e7e79b9;
 }
 h4{
    font-size: 20px;
    margin-bottom: 10px;
+   color: white;
+   opacity: 1;
+   
 }
 .rst {
    font-size: 20px;
